@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/jInvertScroll.css" />
+        <link rel="stylesheet" type="text/css" href="css/stapel.css"/>
+        <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<title>My portfolio</title>
+	</head>
+    </body>
+        <div class="button-menu">
+			<i class="fa fa-arrow-up" aria-hidden="true"></i>
+		</div>
+
+        <!--navigation-->
+
+        <nav class="navbar container-fluid myNavbar" id="home">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#Mymenu" aria-expanded="false" >
+	                	<span class="icon-bar"></span>
+	                	<span class="icon-bar"></span>
+	                	<span class="icon-bar"></span>
+					</button>
+                    <a class="navbar-brand" href="#home">Oto moja historia...</a>
+                </div>
+                <div id="Mymenu" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#about-me">O mnie</a></li>
+                        <li><a href="#technology">Czego dotychczas się nauczyłem?</a></li>
+                        <li><a href="#projects">Moje projekty</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--jumbotron-->
+
+
+        <section class="jumbotron container-fluid">
+            <div class="container text-center">
+                <div class="slogan text-center">
+                    <h1> W czym mogę Ci pomóc?</h1>
+                </div>
+                <a href="#about-me"><button class="btn btn-success btn-lg myBtn center-block">Zobacz co na Ciebie czeka...</button></a>
+            </div>
+        </section>
+        <section id="about-me">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-5">
+                        <img src="./image/Grzegorz%20fotka.jpg" class="img-responsive img-thumbnail center-block">
+                    </div>
+                    <div class="col-xs-12 col-md-5 col-md-offset-1">
+                        <h2>O mnie</h2>
+                        <p class="text-justify">Cześć! Mam na imię Grzegorz i jako początkujący front-end developer tworzę funkcjonalne i estetyczne strony internetowe, wykorzystując różne technologie webowe. Cały czas doskonalę nabyte umiejętności i chciałbym rozwinąć moją pasję, uczestnicząc w ciekawych projektach.<br><br>Moim celem zawodym jest zmiana branży oraz rozpoczęcie pracy zawodowej na stanowisku junior front-end developera. Zachęcam do zapoznania się z moim Portfolio oraz profilem <a href="https://www.linkedin.com/in/grzegorz-świderski-9b6928124" target="_blank">Linkedin.</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- technology -->
+
+        <section id="technology">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <h2 class="text-center">Czego dotychczas się nauczyłem?</h2>
+                        <p class="text-justify">Podczas dotyczasowej nauki programowania zapoznałem się z niezbędnymi informacjami, które pozwalają mi tworzyć w pełni funkcjonalne strony internetowe oraz pisać proste skrypty i aplikacje webowe. Główny nacisk położyłem na naukę HTML, CSS3, Sass, RWD oraz frameworku Bootstrap. Dodatkowo przyswoiłem podstawowe informacje dotyczące pracy z językiem programowania jakim jest javaScript oraz powiązaną z nim biblioteką jQuery, których znajomość umożliwia mi na tworzenie "żywych" stron internetowych. Poziom zgoromadzonej przeze mnie dotyhczas wiedzy poddałem mojej subiektywnej ocenie w skali od 1 do 5. W ostatnim zbiorze zawarłem zagadnienia, których nauką chciałbym zająć się w najbliższym czasie.</p>
+                    </div>
+                    <div class="col-xs-12 col-md-12">
+                        <div class="topbar">
+						  <button id="close" class="back"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+						  <h2 class="text-left">Technologie:</h2><h3 id="name" class="text-center"></h3>
+                        </div>  
+                        <div class="margin-left">
+                            <ul id="tp-grid" class="tp-grid">
+
+                                <!--tech. statyczne-->
+
+                                <li data-pile="Technologie statyczne:">
+                                    <span class="tp-info">
+                                        <span>
+                                            <div class="icons center-block">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>
+                                        </span>
+                                    </span>
+                                    <img src="icons/whiteBackground/HTML5.png">
+                                </li>
+                                <li data-pile="Technologie statyczne:">
+                                    <span class="tp-info">
+                                        <span>
+                                            <div class="icons center-block">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>
+                                        </span>
+                                    </span>
+                                    <img src="icons/whiteBackground/css3.png">
+                                </li>
+                                <li data-pile="Technologie statyczne:">
+                                    <span class="tp-info center-block">
+                                        <span>
+                                            <div class="icons">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>
+                                        </span>
+                                    </span>
+                                    <img src="icons/whiteBackground/sass.png">
+                                </li>
+                                <li data-pile="Technologie statyczne:">
+                                    <span class="tp-info center-block">
+                                        <span>
+                                            <div class="icons">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>
+                                        </span>
+                                    </span>
+                                    <img src="icons/whiteBackground/rwd.png">
+                                </li>
+
+                                <!--tech. aktywne!-->
+
+                                <li data-pile="Technologie aktywne:">
+                                    <span class="tp-info">
+                                        <span>
+                                            <div class="icons center-block">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>
+                                        </span>
+                                    </span>
+                                    <img src="icons/whiteBackground/bootstrap.png">
+                                </li>
+                                <li data-pile="Technologie aktywne:">
+                                    <span class="tp-info center-block">
+                                        <span>
+                                            <div class="icons">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                            </div>
+                                        </span>
+                                    </span>
+                                    <img src="icons/whiteBackground/js.png">
+                                </li>
+                                <li data-pile="Technologie aktywne:">
+                                    <span class="tp-info center-block">
+                                        <span>
+                                            <div class="icons">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                            </div>
+                                        </span>
+                                    </span>
+                                    <img src="icons/whiteBackground/jquery.png">
+                                </li>
+                                <li data-pile="Technologie aktywne:">
+                                    <span class="tp-info center-block">
+                                        <span>
+                                            <div class="icons">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                            </div>
+                                        </span>
+                                    </span>
+                                <img src="icons/whiteBackground/AJAX.png">
+                                </li>
+
+                                <!-- inne -->
+
+                                <li data-pile="Pozostałe technologie:">
+                                    <span class="tp-info">
+                                        <span>
+                                            <div class="icons center-block">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                            </div>
+                                        </span>
+                                    </span>
+                                    <img src="icons/whiteBackground/grunt.png">
+                                </li>
+                                <li data-pile="Pozostałe technologie:">
+                                    <span class="tp-info">
+                                        <span>
+                                            <div class="icons center-block">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                            </div>
+                                        </span>
+                                    </span>
+                                    <img src="icons/whiteBackground/github.png">
+                                </li>
+                                <li data-pile="Pozostałe technologie:">
+                                    <span class="tp-info">
+                                        <span>
+                                            <div class="icons center-block">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                            </div>
+                                        </span>
+                                    </span>
+                                    <img src="icons/whiteBackground/ps.png">
+                                </li>
+                                <li data-pile="Pozostałe technologie:">
+                                    <span class="tp-info">
+                                        <span>
+                                            <div class="icons center-block">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                            </div>
+                                        </span>
+                                    </span>
+                                    <img src="icons/whiteBackground/inscape.png">
+                               </li>
+                                
+                                <!-- nauka-->
+                                
+                                <li data-pile="Czego się będę uczyć?">
+                                    <span class="tp-info">
+                                        <span>
+                                            <div class="icons center-block">
+                                               <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                            </div>
+                                        </span>
+                                    </span>
+                                    <img src="icons/whiteBackground/react.png">
+                                </li>
+                                <li data-pile="Czego się będę uczyć?">
+                                    <span class="tp-info">
+                                        <span>
+                                            <div class="icons center-block">
+                                               <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                            </div>
+                                        </span>
+                                    </span>
+                                    <img src="icons/whiteBackground/node.png">
+                                </li>
+                                <li data-pile="Czego się będę uczyć?">
+                                    <span class="tp-info">
+                                        <span>
+                                            <div class="icons center-block">
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                                <i class="fa fa-star icons-black" aria-hidden="true"></i>
+                                            </div>
+                                        </span>
+                                    </span>
+                                    <img src="icons/whiteBackground/mangoDb.png">
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--projekty-->
+
+
+        <section id="projects">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+                        <h2 class="text-center">Moje projekty</h2>
+                        <p class="text-justify">Każdy z moich projektów został oparty o poznane przeze mnie technologie. Dodatkowo przykładowe strony zostały wzbogacone o wpełni zuatomatyzowany system kompilacji Sass na CSS3 za pośrednictwem Grunta. </p>
+                    </div>
+                    
+                    <!--karuzela-->
+                    
+                    
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-1 carousel">
+                        <div class="btn-carousel">
+                            <button class="prev-community"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                            <button class="next-community right"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="center">
+                            <div >
+                                <img src="./image/servis.jpg" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#ServisPage">
+                            </div>
+                            <div>
+                                <img src="./image/activebox.jpg" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#ActiveBox">
+                            </div>
+                            <div>
+                                <img src="./image/simple_photo.jpg" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#Simple_photo">
+                            </div>
+                            <div>
+                                <img src="./image/rock.jpg" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#RockPaperScissors">
+                            </div>
+                            <div>
+                                <img src="./image/Quote.jpg" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#QuoteMachine">
+                            </div>
+                            <div>
+                                <img src="./image/travel.jpg" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#Travel">
+                            </div>
+                        </div>
+                        <div class="modals">
+                            
+                        <!--Servis-->
+                            
+                            
+                            <div id="ServisPage" class="modal fade" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4>Servis Page</h4>
+										</div>
+										<div class="modal-body">
+								            <img src="./image/servis.jpg" class="img-responsive center-block img-project">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <p>Projekt zbudowany został w oparciu o:</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <img src="./icons/HTML5.png" class="img-responsive center-block ico-tech">
+                                                        <img src="./icons/css3.png" class="img-responsive center-block ico-tech">
+                                                        <img src="./icons/sass.png" class="img-responsive center-block ico-tech">
+                                                        <img src="./icons/bootstrap.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/rwd.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/js.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/jquery.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/grunt.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/github.png" class="img-responsive center-block ico-tech">
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <p>Przejdź do projektu:</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <a href="https://github.com/grzegorz-swiderski/ServisPage" target="_blank"><button>GITHUB</button></a>
+                                                        <a href="https://grzegorz-swiderski.github.io/ServisPage/" target="_blank"><button>LIVE</button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn" data-dismiss="modal">Wróć</button>
+										</div>
+									</div>
+								</div>
+							</div>
+                            
+                            <!--ActiveBox-->
+                            
+                            
+                            <div id="ActiveBox" class="modal fade" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4>ActiveBox</h4>
+										</div>
+										<div class="modal-body">
+								            <img src="./image/activebox.jpg" class="img-responsive center-block">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <p>Projekt zbudowany został w oparciu o:</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <img src="./icons/HTML5.png" class="img-responsive center-block ico-tech">
+                                                        <img src="./icons/css3.png" class="img-responsive center-block ico-tech">
+                                                        <img src="./icons/sass.png" class="img-responsive center-block ico-tech">
+                                                         <img src="./icons/bootstrap.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/rwd.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/js.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/jquery.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/grunt.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/github.png" class="img-responsive center-block ico-tech">
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <p>Przejdź do projektu:</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <a href="https://github.com/grzegorz-swiderski/ActiveBox" target="_blank"><button>GITHUB</button></a>
+                                                        <a href="https://grzegorz-swiderski.github.io/ActiveBox/" target="_blank"><button>LIVE</button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary" data-dismiss="modal">Wróć</button>
+										</div>
+									</div>
+								</div>
+							</div>
+                            
+                            <!--Simple-->
+                            
+                            
+                            <div id="Simple_photo" class="modal fade" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4>Simple Photo</h4>
+										</div>
+										<div class="modal-body">
+								            <img src="./image/simple_photo.jpg" class="img-responsive center-block">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <p>Projekt zbudowany został w oparciu o:</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <img src="./icons/HTML5.png" class="img-responsive center-block ico-tech">
+                                                        <img src="./icons/css3.png" class="img-responsive center-block ico-tech">
+                                                        <img src="./icons/sass.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/rwd.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/js.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/jquery.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/slick.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/grunt.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/github.png" class="img-responsive center-block ico-tech">
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <p>Przejdź do projektu:</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <a href="https://github.com/grzegorz-swiderski/Simple_photo" target="_blank"><button>GITHUB</button></a>
+                                                        <a href="https://grzegorz-swiderski.github.io/Simple_photo/" target="_blank"><button>LIVE</button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary" data-dismiss="modal">Wróć</button>
+										</div>
+									</div>
+								</div>
+							</div>
+                            
+                            <!--Rock-->
+                            
+                            <div id="RockPaperScissors" class="modal fade" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4>Rock Paper Scissors</h4>
+										</div>
+										<div class="modal-body">
+								            <img src="./image/rock.jpg" class="img-responsive center-block">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <p>Projekt zbudowany został w oparciu o:</p>
+                                                     </div>
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <img src="./icons/HTML5.png" class="img-responsive center-block ico-tech">
+                                                        <img src="./icons/css3.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/rwd.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/js.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/jquery.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/github.png" class="img-responsive center-block ico-tech">
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <p>Przejdź do projektu:</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <a href="https://github.com/grzegorz-swiderski/RockPaperScissors" target="_blank"><button>GITHUB</button></a>
+                                                        <a href="https://grzegorz-swiderski.github.io/RockPaperScissors/" target="_blank"><button>LIVE</button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary" data-dismiss="modal">Wróć</button>
+										</div>
+									</div>
+								</div>
+							</div>
+                            
+                            <!--Quote-->
+
+                            <div id="QuoteMachine" class="modal fade" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4>Quote Machine</h4>
+										</div>
+										<div class="modal-body">
+								            <img src="./image/Quote.jpg" class="img-responsive center-block">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <p>Projekt zbudowany został w oparciu o:</p>
+                                                     </div>
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <img src="./icons/HTML5.png" class="img-responsive center-block ico-tech">
+                                                        <img src="./icons/css3.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/rwd.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/js.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/jquery.png" class="img-responsive center-block ico-tech">
+                                                        <img src="./icons/AJAX.png" class="img-responsive center-block ico-tech"> 
+                                                        <img src="icons/github.png" class="img-responsive center-block ico-tech">
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <p>Przejdź do projektu:</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <a href="https://github.com/grzegorz-swiderski/QuoteMachine" target="_blank"><button>GITHUB</button></a>
+                                                        <a href="https://grzegorz-swiderski.github.io/QuoteMachine/" target="_blank"><button>LIVE</button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary" data-dismiss="modal">Wróć</button>
+										</div>
+									</div>
+								</div>
+							</div>
+                            
+                            <!--Travel-->
+                            
+                            <div id="Travel" class="modal fade" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4>Small or large travel</h4>
+										</div>
+										<div class="modal-body">
+								            <img src="./image/travel.jpg" class="img-responsive center-block">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <p>Projekt zbudowany został w oparciu o:</p>
+                                                     </div>
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <img src="./icons/HTML5.png" class="img-responsive center-block ico-tech">
+                                                        <img src="./icons/css3.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/rwd.png" class="img-responsive center-block ico-tech">
+                                                       <img src="icons/js.png" class="img-responsive center-block ico-tech">
+                                                        <img src="icons/jquery.png" class="img-responsive center-block ico-tech">
+                                                        <img src="./icons/AJAX.png" class="img-responsive center-block ico-tech"> 
+                                                        <img src="icons/github.png" class="img-responsive center-block ico-tech">
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <p>Przejdź do projektu:</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-12">
+                                                        <a href="https://github.com/grzegorz-swiderski/Travel" target="_blank"><button>GITHUB</button></a>
+                                                        <a href="https://grzegorz-swiderski.github.io/Travel/" target="_blank"><button>LIVE</button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary" data-dismiss="modal">Wróć</button>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--kontakt-->
+
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-5">
+                        <h2 class="align">Formularz kontaktowy:</h2>
+						<form action="https://formspree.io/grzegorzswiderski1988@gmail.com" method="POST">
+							<div class="form-group">
+    							<label for="NameandSurname">Imię i Nazwisko:</label>
+    							<input type="text" class="form-control" id="NameandSurname" placeholder="Imię i nazwisko">
+  							</div>
+  							<div class="form-group">
+    							<label for="email">Adres email:</label>
+    							<input type="email" class="form-control" id="Email" placeholder="Adres e-mail">
+  							</div>
+  							<div class="form-group">
+    							<label for="InputMassage">Treść zapytania:</label>
+    							<textarea name="InputMassage" id="InputMassage" class="form-control" rows="7" required placeholder="Treść zapytania"></textarea>
+  							</div>
+                            <button type="submit" class="btn btn-default submit">Wyślij!</button>
+				        </form>
+					</div>
+                    <div class="col-xs-12 col-md-6 col-md-offset-1">
+                        <h2 class="align">Przyszła współpraca?</h2>
+                        <p class="text-justify">Jeśli moja oferta okazała się być dla Ciebie interesująca, zachęcam do kontaktu, a także do zapoznania się z moim CV. Prześlij do mnie wiadomość, a postaram się odpowiedzieć na nią jak najszybciej będzie to możliwe. Wspólnie dobierzemy własciwe rozwiązania, które zaspokoją Twoje potrzeby. Nie czekaj ani chwili dłużej! Wypełnij formularz obok i naciśnij przycisk "Wyjślij". </p>
+                    </div>
+                </div>
+            </div>   
+        </section>
+
+        <!--adres-->
+
+        <section id="adress">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 col-lg-5 align">
+                       <h3>Kontakt:</h3> 
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12 col-lg-4"><p>Telefon:</p></div>
+                            <div class="col-xs-12 col-md-12 col-lg-6"><p>664 425 033</p></div>
+                            <div class="col-xs-12 col-md-12 col-lg-4"><p>Adres e-mail:</p></div>
+                            <div class="col-xs-12 col-md-12 col-lg-6"><p>grzegorzswiderski1988@gmail.com</p></div>
+                        </div>
+                    </div>
+                     <div class="col-xs-12 col-md-12 col-lg-3 align">
+                       <h3>Adres:</h3> 
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12"><p>ul. Jagiellońska 10d/84</p></div>
+                         </div>
+                         <div class="row">
+                            <div class="col-xs-12 col-md-12"><p>80-371 Gdańsk</p></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-12 col-lg-3 align">
+                       <h3>Social Media:</h3> 
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12">
+                                <a href="https://www.facebook.com/grzegorz.swiderski.75" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="https://www.linkedin.com/in/grzegorz-świderski-9b6928124" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="https://github.com/grzegorz-swiderski" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--footer-->
+
+        <section id="footer">
+            <div class="container">
+                <p class="text-center">2017 Copyrights by Grzegorz Świderski</p>
+            </div>        
+        </section>
+
+        <!--scripts-->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="js/modernizr.custom.63321.js"></script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
+        <script type="text/javascript" src="js/jquery.stapel.js"></script>
+        <script src="js/script.js" type="text/javascript" defer></script>
+    </body>
+</html>

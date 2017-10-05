@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css?family=Pangolin");
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+/*mixin*/
+/*main*/
+* {
+  box-sizing: border-box; }
+
+section {
+  padding: 5% 0; }
+
+.button-menu {
+  border-radius: 50%;
+  background: rgba(2, 20, 25, 0.4);
+  color: white;
+  position: fixed;
+  z-index: 50;
+  left: 95%;
+  top: 85%;
+  cursor: pointer;
+  transition: linear 0.2s; }
+  .button-menu:hover {
+    background: #cf0034;
+    animation: jump 0.5s 3; }
+  .button-menu i {
+    font-size: 450%;
+    padding: 4px; }
+
+@keyframes jump {
+  0% {
+    transform: translate(0, 0px); }
+  50% {
+    transform: translate(0, -30px); }
+  100% {
+    transform: translate(0, 0px); } }
+
+/*body*/
+body {
+  margin: 0 0;
+  padding: 0 0;
+  font-family: 'Poppins', sans-serif; }
+
+/*nav*/
+.myNavbar {
+  background: rgba(0, 0, 0, 0.3);
+  font-family: 'Pangolin', cursive;
+  margin: 0;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5); }
+  .myNavbar .navbar-header a {
+    color: white; }
+  .myNavbar .navbar-header button {
+    background: rgba(0, 0, 0, 0.2);
+    border: solid 1px white; }
+    .myNavbar .navbar-header button span {
+      border: solid 1px white; }
+  .myNavbar li a {
+    color: white; }
+    .myNavbar li a:hover, .myNavbar li a:focus {
+      color: white;
+      background: rgba(0, 0, 0, 0.2); }
+
+/*jumbotron*/
+.jumbotron {
+  background: url("../image/help.jpeg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+  margin: 0; }
+  .jumbotron .slogan {
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    padding: 4vh 0;
+    width: 80%; }
+    .jumbotron .slogan h1 {
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      text-transform: uppercase;
+      box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+      font-family: 'Permanent Marker', cursive;
+      padding: 2%; }
+  .jumbotron .myBtn {
+    position: absolute;
+    padding: 1%;
+    top: 80%;
+    left: 35%;
+    font-size: 150%;
+    background: #0a465a;
+    border: none;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5); }
+    .jumbotron .myBtn:hover {
+      background: #021419;
+      transform: scale(1.2); }
+
+/*about-me*/
+#about-me img {
+  width: 100%;
+  height: 400px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5); }
+
+#about-me h2 {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  text-transform: uppercase;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+  font-family: 'Permanent Marker', cursive;
+  background: none;
+  box-shadow: none;
+  font-size: 2.8em;
+  padding-bottom: 2%;
+  padding-top: 0;
+  color: #0a465a;
+  font-family: 'Pangolin', cursive; }
+
+#about-me p {
+  font-size: 1.3em; }
+  #about-me p a {
+    text-decoration: none; }
+
+/*technology*/
+#technology {
+  background: #0a465a;
+  color: white; }
+  #technology h2 {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-transform: uppercase;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Permanent Marker', cursive;
+    background: none;
+    box-shadow: none;
+    font-size: 2.8em;
+    padding-bottom: 2%;
+    padding-top: 0;
+    color: #0a465a;
+    font-family: 'Pangolin', cursive;
+    color: white; }
+  #technology p {
+    font-size: 1.3em; }
+  #technology .back {
+    width: 97%;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: rgba(0, 0, 0, 0.3) 1px solid;
+    display: none;
+    position: absolute;
+    right: 1%;
+    top: 10%;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5); }
+    #technology .back i {
+      font-size: 2em;
+      font-weight: 900;
+      color: rgba(0, 0, 0, 0.5); }
+
+.margin-left {
+  margin-left: 5%; }
+
+.tp-grid {
+  z-index: 1; }
+  .tp-grid li {
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5); }
+  .tp-grid .tp-title {
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5); }
+  .tp-grid img {
+    width: 200px;
+    height: 200px; }
+  .tp-grid .tp-info {
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5); }
+
+.icons {
+  width: 90%;
+  height: 25%;
+  color: gold;
+  font-size: 140%;
+  z-index: 1; }
+
+.icons-black {
+  color: black; }
+
+/*projects*/
+#projects h2 {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  text-transform: uppercase;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+  font-family: 'Permanent Marker', cursive;
+  background: none;
+  box-shadow: none;
+  font-size: 2.8em;
+  padding-bottom: 2%;
+  padding-top: 0;
+  color: #0a465a;
+  font-family: 'Pangolin', cursive; }
+
+#projects p {
+  font-size: 1.3em; }
+
+#projects .carousel {
+  position: relative;
+  margin-top: 2.5%;
+  padding: 0;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); }
+  #projects .carousel .center img {
+    width: 100%;
+    height: 300px; }
+    #projects .carousel .center img:hover {
+      cursor: pointer;
+      transform: scale(1.2); }
+  #projects .carousel .btn-carousel button {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    width: 97%;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: rgba(0, 0, 0, 0.3) 1px solid; }
+    #projects .carousel .btn-carousel button i {
+      font-size: 2em;
+      font-weight: 900;
+      color: rgba(0, 0, 0, 0.5); }
+  #projects .carousel .right {
+    right: 0%; }
+
+/*modals*/
+.modals {
+  width: 100%; }
+  .modals h4 {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-transform: uppercase;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Permanent Marker', cursive;
+    background: none;
+    box-shadow: none;
+    font-size: 2.8em;
+    padding-bottom: 2%;
+    padding-top: 0;
+    color: #0a465a;
+    font-family: 'Pangolin', cursive;
+    color: black; }
+  .modals img {
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 5px; }
+
+.modal-body [class*="col-"] {
+  padding: 10px 0; }
+  .modal-body [class*="col-"] button {
+    border: 2px solid #0a465a;
+    background: white;
+    color: #0a465a;
+    border-radius: 10px;
+    font-size: 1em;
+    padding: 0.75%;
+    transition-duration: 0.4s;
+    transition-timing-function: ease; }
+    .modal-body [class*="col-"] button:hover {
+      background: #0a465a;
+      color: white;
+      border: 2px solid #0a465a; }
+
+.modal-footer .btn {
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  background: #0a465a;
+  color: white; }
+  .modal-footer .btn:hover {
+    border: 2px solid #0a465a;
+    background: white;
+    color: #0a465a; }
+
+.ico-tech {
+  display: inline-block;
+  width: 50px;
+  height: 50px; }
+
+/*contact*/
+#contact {
+  background: #0a465a;
+  color: white; }
+  #contact h2 {
+    font-size: 2.5em;
+    padding: 2% 0; }
+  #contact p {
+    font-size: 1.5em; }
+  #contact .btn {
+    transition-duration: 0.4s;
+    transition-timing-function: ease; }
+    #contact .btn:hover {
+      background: #0a465a;
+      color: white;
+      border: 2px solid white; }
+
+/*adres*/
+#adress {
+  background: #051e23;
+  color: white;
+  padding: 2%;
+  width: 100%; }
+  #adress a {
+    padding: 0 2%; }
+    #adress a i {
+      color: white;
+      padding: 2%;
+      font-size: 1.7em;
+      border: 2px solid white;
+      transition-duration: 0.4s;
+      transition-timing-function: ease; }
+      #adress a i:hover {
+        color: #051e23;
+        background: white; }
+  #adress p {
+    font-size: 1.2em; }
+
+/*footer*/
+#footer {
+  padding: 1% 0;
+  background: #021419; }
+  #footer p {
+    margin: 0;
+    color: white; }
+
+@media (max-width: 350px) {
+  .align {
+    text-align: center; }
+  .button-menu {
+    left: 80%;
+    top: 80%; }
+  .myNavbar {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); }
+  .jumbotron {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); }
+    .jumbotron h1 {
+      font-size: 1.8em; }
+    .jumbotron .myBtn {
+      font-size: 0.8em;
+      padding: 2%; }
+  #about-me h2 {
+    font-size: 1.3em; }
+  #about-me p {
+    font-size: 0.8em; }
+  #technology h2 {
+    font-size: 1.3em; }
+  #technology p {
+    font-size: 0.8em; }
+  #technology span {
+    font-size: 0.8em; }
+  #technology .back {
+    display: none;
+    position: absolute;
+    right: 1%;
+    top: 1%; }
+  .margin-left {
+    margin-left: auto; }
+  #projects h2 {
+    font-size: 1.3em; }
+  #projects p {
+    font-size: 0.8em; }
+  .modals {
+    width: 100vw; }
+  #contact h2 {
+    font-size: 1.3em; }
+  #contact p {
+    font-size: 0.8em; }
+  #adress h3 {
+    font-size: 1.3em; }
+  #adress p {
+    font-size: 0.8em; } }
+
+@media (min-width: 351px) and (max-width: 767px) {
+  .align {
+    text-align: center; }
+  .button-menu {
+    left: 82.5%;
+    top: 80%; }
+  .myNavbar {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); }
+  .jumbotron {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); }
+    .jumbotron h1 {
+      font-size: 2em; }
+    .jumbotron .myBtn {
+      font-size: 1em;
+      padding: 2%; }
+  #about-me h2 {
+    font-size: 1.4em; }
+  #about-me p {
+    font-size: 0.9em; }
+  #technology h2 {
+    font-size: 1.4em; }
+  #technology p {
+    font-size: 0.9em; }
+  #technology .back {
+    display: none;
+    position: absolute;
+    right: 1%;
+    top: 1%; }
+  .margin-left {
+    margin-left: auto; }
+  #projects h2 {
+    font-size: 1.4em; }
+  #projects p {
+    font-size: 0.9em; }
+  .modals {
+    width: 100vw; }
+  #contact h2 {
+    font-size: 1.4em; }
+  #contact p {
+    font-size: 0.9em; }
+  #adress h3 {
+    font-size: 1.2em; }
+  #adress p {
+    font-size: 0.9em; } }
+
+@media (min-width: 461px) and (max-width: 679px) and (orientation: landscape) {
+  .button-menu {
+    left: 87%;
+    top: 70%; }
+  .jumbotron {
+    height: 150vh; } }
+
+@media (min-width: 680px) and (max-width: 767px) and (orientation: landscape) {
+  .button-menu {
+    left: 90%;
+    top: 80%; }
+  .jumbotron {
+    height: 140vh; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .align {
+    text-align: center; }
+  .button-menu {
+    left: 90%;
+    top: 80%; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .align {
+    text-align: center; }
+  .button-menu {
+    left: 90%;
+    top: 80%; } }
