@@ -15,6 +15,8 @@ $(document).ready(function(){
     
 ///button-menu
     
+    $(".fa-arrow-up").hide();
+    
     $(".fa-arrow-up").click(function(){
 		$("html,body").animate({scrollTop: 0},500);
 	});
