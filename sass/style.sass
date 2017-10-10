@@ -54,6 +54,32 @@ $background-shadow: rgba(0,0,0,0.3)
   font-weight: 900
   color: rgba(0,0,0, 0.5)
 
+@mixin visible-style
+  visibility: visible
+  opacity: 1
+
+@mixin layer-style
+  position: absolute
+  z-index: 2
+  visibility: hidden
+  opacity: 0
+
+@mixin ico-style
+  @include layer-style
+  height: auto
+  width: 90%
+  background: rgba(255,255,255, 0.8)
+  border-radius: 10px
+  display: flex
+  justify-content: space-around
+
+@mixin img-ico-style
+  display: inline-block
+  width: 35px
+  height: 35px
+  padding: 2%
+  transition: none
+
 /*main*/
 
 *
@@ -72,13 +98,12 @@ section
   top: 85%
   cursor: pointer
   transition: linear 0.2s
-  display: none
   &:hover
     background: rgba(207,0,52, 1)
     animation: jump 0.5s 3
   i
-    font-size: 450%
-    padding: 4px
+    font-size: 400%
+    padding: 10px
     
 @keyframes jump
   0%
@@ -108,6 +133,7 @@ body
   .navbar-header
     a
       color: $font-color-in-dark-background
+      font-size: 1.5em
     button
       background: rgba(0,0,0,0.2)
       border: solid 1px white
@@ -116,6 +142,7 @@ body
   li
     a
       color: $font-color-in-dark-background
+      font-size: 1.5em
       &:hover,
       &:focus
         color: $font-color-in-dark-background
@@ -162,7 +189,7 @@ body
 #about-me
   img
     width: 100%
-    height: 400px
+    height: auto
     box-shadow: $shadow
   h2
     @include h-style
@@ -205,16 +232,6 @@ body
     height: 200px
   .tp-info
     box-shadow: $shadow
-    
-.icons
-  width: 90%
-  height: 25%
-  color: gold
-  font-size: 140%
-  z-index: 1
-.icons-black
-  color: black
-
   
 /*projects*/
 
@@ -229,12 +246,66 @@ body
     padding: 0
     box-shadow: 0px 5px 5px rgba(0,0,0,0.5)
     .center
-      img
-        width: 100%
-        height: 300px
+      .image
+        position: relative
+        overflow: hidden
+        height: 100%
+        &:after
+          content: ""
+          position: absolute
+          width: 100%
+          height: 100%
+          background: rgba(10,70,90, 0.3)
+          top: 0
+          left: 0
+          visibility: hidden
+          opacity: 0
+          z-index: 1
         &:hover
           cursor: pointer
-          transform: $main-scale
+          &:after
+            @include visible-style
+          img
+            transform: $main-scale
+          .btn-image
+            @include visible-style
+            @include main-transition
+          .ico
+            @include visible-style
+        img
+          width: 100%
+          height: 300px
+          @include main-transition
+        .btn-image
+          @include layer-style
+          display: flex
+          width: 50%
+          top: 60%
+          left: 50%
+          transform: translate(-50%, -60%)
+          justify-content: space-between
+          button
+            border: 2px solid rgb(10,70,90)
+            background: white
+            color: rgb(10,70,90)
+            border-radius: 10px
+            font-size: 2em
+            font-weight: bold
+            padding: 3% 5%
+            @include main-transition
+            &:hover
+              background: $background-button
+              color: white
+              border: 2px solid white
+        .ico
+          @include ico-style
+          top: 10%
+          left: 50%
+          transform: translate(-50%, -10%)
+          img
+            @include img-ico-style
+
+      
     .btn-carousel
       button
         position: absolute
@@ -247,48 +318,6 @@ body
           color: rgba(0,0,0, 0.5)
     .right
       right: 0%
-    
-/*modals*/
-
-.modals
-  width: 100%
-  h4
-    @include h-style
-    color: black
-  img
-    box-shadow: $shadow
-    padding: 5px
-
-.modal-body
-  [class*="col-"]
-    padding: 10px 0
-    button
-      border: 2px solid rgb(10,70,90)
-      background: white
-      color: rgb(10,70,90)
-      border-radius: 10px
-      font-size: 1em
-      padding: 0.75%
-      @include main-transition
-      &:hover
-        background: $background-button
-        color: white
-        border: 2px solid rgb(10,70,90)
-    
-.modal-footer
-  .btn
-    @include main-transition
-    background: rgb(10,70,90)
-    color: white
-    &:hover
-      border: 2px solid rgb(10,70,90)
-      background: white
-      color: $background-button
-  
-.ico-tech
-  display: inline-block
-  width: 50px
-  height: 50px    
 
 /*contact*/
 
@@ -316,6 +345,9 @@ body
   width: 100%
   a
     padding: 0 2%
+    text-decoration: none 
+    &:hover
+      text-decoration: none 
     i
       color: $font-color-in-dark-background
       padding: 2%
@@ -325,6 +357,17 @@ body
       &:hover
         color: rgb(5,30,35)
         background: white
+    span
+      color: $font-color-in-dark-background
+      padding: 1.5%
+      font-size: 1.3em
+      border: 2px solid white
+      @include main-transition
+      font-weight: bold
+      &:hover
+        color: rgb(5,30,35)
+        background: white
+        font-weight: bold
   p
     font-size: 1.2em
     
@@ -349,6 +392,9 @@ body
     
   .myNavbar
     box-shadow: 0px 5px 5px rgba(0,0,0,0.5)
+    li
+      a
+        font-size: 1.2em
     
   .jumbotron
     box-shadow: 0px 5px 5px rgba(0,0,0,0.5)
@@ -364,6 +410,8 @@ body
       font-size: 1.3em
     p
       font-size: 0.8em
+    img
+      margin-bottom: 10%
     
   #technology
     h2
@@ -413,6 +461,9 @@ body
     
   .myNavbar
     box-shadow: 0px 5px 5px rgba(0,0,0,0.5)
+    li
+      a
+        font-size: 1.3em
     
   .jumbotron
     box-shadow: 0px 5px 5px rgba(0,0,0,0.5)
@@ -428,6 +479,8 @@ body
       font-size: 1.4em
     p
       font-size: 0.9em
+    img
+      margin-bottom: 10%
     
   #technology
     h2
@@ -448,9 +501,6 @@ body
       font-size: 1.4em
     p
       font-size: 0.9em
-    
-  .modals
-    width: 100vw
     
   #contact
     h2
@@ -490,6 +540,18 @@ body
   .button-menu
     left: 90%
     top: 80%
+    
+  .myNavbar
+    .navbar-header
+      a
+        font-size: 1.2em
+    li
+      a
+        font-size: 1.2em
+    
+  #about-me
+    img
+      margin-bottom: 10%
     
 @media (min-width:992px) and (max-width: 1199px)
     
