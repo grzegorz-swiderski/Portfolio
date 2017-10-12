@@ -39,7 +39,7 @@ $(document).ready(function(){
         nextArrow: $('.next-community'),
         responsive: [
             {
-            breakpoint: 767,
+            breakpoint: 640,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
