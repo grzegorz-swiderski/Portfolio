@@ -1,0 +1,37 @@
+/*technology*/
+
+#technology
+  background: rgb(10,70,90)
+  color: $font-color-in-dark-background
+  h2
+    @include h-style
+    color: $font-color-in-dark-background
+  p
+    font-size: 1.3em
+  span
+    font-size: 1em
+  .back
+    @include button-style
+    display: none
+    position: absolute
+    right: 1%
+    top: 10%
+    box-shadow: $shadow
+    i
+      @include icon-style
+        
+.margin-left
+  margin-left: 5%
+
+.tp-grid
+  z-index: 1
+  li
+    box-shadow: $shadow
+  .tp-title
+    box-shadow: $shadow
+    height: 80px
+  img
+    width: 200px
+    height: 200px
+  .tp-info
+    box-shadow: $shadow

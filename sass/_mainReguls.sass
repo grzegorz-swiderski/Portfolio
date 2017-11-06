@@ -1,0 +1,39 @@
+/*main*/
+
+*
+  box-sizing: border-box
+
+section
+  padding: 5% 0
+
+.button-menu
+  border-radius: 50%
+  background: rgba(2,20,25, 0.4)
+  color: white
+  position: fixed
+  z-index: 50
+  left: 95%
+  top: 85%
+  cursor: pointer
+  transition: linear 0.2s
+  &:hover
+    background: rgba(207,0,52, 1)
+    animation: jump 0.5s 3
+  i
+    font-size: 400%
+    padding: 10px
+    
+@keyframes jump
+  0%
+    transform: translate(0,0px)
+  50%
+    transform: translate(0,-30px)
+  100%
+    transform: translate(0,0px)
+
+/*body*/
+
+body
+  margin: 0 0
+  padding: 0 0
+  font-family: 'Poppins', sans-serif

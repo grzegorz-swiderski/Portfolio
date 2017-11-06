@@ -1,0 +1,79 @@
+$font-color-in-dark-background: rgb(255,255,255)
+$background-button: rgb(10,70,90)
+$main-text-transform: uppercase
+$main-scale: scale(1.2)
+$hover-button: rgb(2,20,25)
+$shadow: 10px 5px 5px rgba(0,0,0,0.5)
+$background-shadow: rgba(0,0,0,0.3)
+
+/*mixin*/
+
+@mixin main-transition
+  transition-duration: 0.4s
+  transition-timing-function: ease
+
+@mixin layer
+  background: rgba(0, 0, 0, 0.8)
+  width: 100%
+  height: 100%
+  border-radius: 5px
+
+@mixin header-style
+  background: rgba(0,0,0,0.3)
+  border-radius: 10px
+  text-transform: $main-text-transform
+  box-shadow: $shadow
+  font-family: 'Shadows Into Light Two', cursive
+  font-weight: 900
+
+@mixin h-style
+  @include header-style
+  background: none
+  box-shadow: none
+  font-size: 2.8em
+  padding-bottom: 2%
+  padding-top: 0
+  color: rgb(10,70,90)
+  font-family: 'Shadows Into Light Two', cursive
+  font-weight: 900
+
+@mixin button-style
+  width: 97%
+  height: 50px
+  background: white
+  border-radius: 50%
+  width: 50px
+  height: 50px
+  border: rgba(0,0,0, 0.3) 1px solid
+
+@mixin icon-style
+  font-size: 2em
+  font-weight: 900
+  color: rgba(0,0,0, 0.5)
+
+@mixin visible-style
+  visibility: visible
+  opacity: 1
+
+@mixin layer-style
+  position: absolute
+  z-index: 2
+  visibility: hidden
+  opacity: 0
+
+@mixin ico-style
+  @include layer-style
+  padding: 1.5%
+  height: auto
+  width: 90%
+  background: rgba(255,255,255, 0.8)
+  border-radius: 10px
+  display: flex
+  justify-content: space-around
+
+@mixin img-ico-style
+  display: inline-block
+  width: 35px
+  height: 35px
+  padding: 2%
+  transition: none
