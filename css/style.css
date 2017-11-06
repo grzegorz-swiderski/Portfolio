@@ -260,7 +260,8 @@ body {
       left: 50%;
       transform: translate(-50%, -60%);
       justify-content: space-between; }
-      #projects .carousel .center .image .btn-image button {
+      #projects .carousel .center .image .btn-image .projectBtn {
+        text-decoration: none;
         border: 2px solid #0a465a;
         background: white;
         color: #0a465a;
@@ -270,7 +271,7 @@ body {
         padding: 3% 5%;
         transition-duration: 0.4s;
         transition-timing-function: ease; }
-        #projects .carousel .center .image .btn-image button:hover {
+        #projects .carousel .center .image .btn-image .projectBtn:hover {
           background: #0a465a;
           color: white;
           border: 2px solid white; }
