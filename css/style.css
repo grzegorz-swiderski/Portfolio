@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Pangolin");
-@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two");
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 /*mixin*/
 /*main*/
@@ -87,7 +87,8 @@ body {
       border-radius: 10px;
       text-transform: uppercase;
       box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
-      font-family: 'Permanent Marker', cursive;
+      font-family: 'Shadows Into Light Two', cursive;
+      font-weight: 900;
       padding: 2%; }
   .jumbotron .myBtn {
     position: absolute;
@@ -115,14 +116,16 @@ body {
   border-radius: 10px;
   text-transform: uppercase;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Shadows Into Light Two', cursive;
+  font-weight: 900;
   background: none;
   box-shadow: none;
   font-size: 2.8em;
   padding-bottom: 2%;
   padding-top: 0;
   color: #0a465a;
-  font-family: 'Pangolin', cursive; }
+  font-family: 'Shadows Into Light Two', cursive;
+  font-weight: 900; }
 
 #about-me p {
   font-size: 1.3em; }
@@ -138,17 +141,21 @@ body {
     border-radius: 10px;
     text-transform: uppercase;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-weight: 900;
     background: none;
     box-shadow: none;
     font-size: 2.8em;
     padding-bottom: 2%;
     padding-top: 0;
     color: #0a465a;
-    font-family: 'Pangolin', cursive;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-weight: 900;
     color: white; }
   #technology p {
     font-size: 1.3em; }
+  #technology span {
+    font-size: 1em; }
   #technology .back {
     width: 97%;
     height: 50px;
@@ -188,14 +195,16 @@ body {
   border-radius: 10px;
   text-transform: uppercase;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Shadows Into Light Two', cursive;
+  font-weight: 900;
   background: none;
   box-shadow: none;
   font-size: 2.8em;
   padding-bottom: 2%;
   padding-top: 0;
   color: #0a465a;
-  font-family: 'Pangolin', cursive; }
+  font-family: 'Shadows Into Light Two', cursive;
+  font-weight: 900; }
 
 #projects p {
   font-size: 1.3em; }
@@ -357,10 +366,10 @@ body {
     font-size: 1.2em; }
 
 /*footer*/
-#footer {
+#myfooter {
   padding: 1% 0;
   background: #021419; }
-  #footer p {
+  #myfooter p {
     margin: 0;
     color: white; }
 
@@ -442,6 +451,8 @@ body {
     font-size: 1.4em; }
   #technology p {
     font-size: 0.9em; }
+  #technology span {
+    font-size: 0.8em; }
   #technology .back {
     display: none;
     position: absolute;
@@ -467,14 +478,26 @@ body {
     left: 87%;
     top: 70%; }
   .jumbotron {
-    height: 150vh; } }
+    height: 150vh; }
+  #technology h2 {
+    font-size: 1.4em; }
+  #technology p {
+    font-size: 0.9em; }
+  #technology span {
+    font-size: 0.9em; } }
 
 @media (min-width: 680px) and (max-width: 767px) and (orientation: landscape) {
   .button-menu {
     left: 90%;
     top: 80%; }
   .jumbotron {
-    height: 140vh; } }
+    height: 140vh; }
+  #technology h2 {
+    font-size: 1.4em; }
+  #technology p {
+    font-size: 0.9em; }
+  #technology span {
+    font-size: 0.9em; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .align {
@@ -487,11 +510,23 @@ body {
   .myNavbar li a {
     font-size: 1.2em; }
   #about-me img {
-    margin-bottom: 10%; } }
+    margin-bottom: 10%; }
+  #technology h2 {
+    font-size: 1.4em; }
+  #technology p {
+    font-size: 0.9em; }
+  #technology span {
+    font-size: 0.9em; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .align {
     text-align: center; }
   .button-menu {
     left: 90%;
-    top: 80%; } }
+    top: 80%; }
+  #technology h2 {
+    font-size: 1.4em; }
+  #technology p {
+    font-size: 0.9em; }
+  #technology span {
+    font-size: 0.9em; } }
